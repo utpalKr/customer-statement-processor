@@ -88,10 +88,14 @@ The JavaDoc is configured can be generated via the following command:
 
 `mvn javadoc:javadoc`
 
+The generated javadoc can be found in the folder /target/site/apidocs. Below is the screenshot for the same.
+
+![Screen Shot 2019-06-29 at 1 18 32 PM](https://user-images.githubusercontent.com/38857264/60383439-de69c880-9a70-11e9-99b9-f25d149f24bb.png)
+
 ## Improvements
 
 1. Basic authentication: user/password are hardcoded
-2. Scope of improvement in validation framework can be added validation for IBAN no.
+2. Scope of improvement in validation framework, can be added validation for IBAN no.
 3. Static code analysis
 4. Test case coverage to increase
 
