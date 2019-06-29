@@ -8,7 +8,7 @@ This application is developed to validate customer statement records.
 The application is hosted on port `8080` and the servlet context path is `/`
 
 ## Security
-Application is secured with basic authentication with users `user:password`.
+Application is secured with basic authentication with credentials `user:password`.
 Security is enabled by default
 
 # Usage
@@ -59,8 +59,7 @@ Either PostMan or an equivalent applications can be used to use the service.
 The endpoint can be used via `cURL` using the following command:
 
 ```bash
-curl -X POST "http://localhost:8080/statement" -H "accept: */*" -H "Content-Type: multipart/form-data" -F
-"statementFile=@instructions.html;type=text/html"
+curl -X POST "http://localhost:8080/statement" -H "accept: */*" -H "Content-Type: multipart/form-data" -F "statementFile=@records.xml;type=text/xml"
 
 ```
 ## Via SwaggerUI
