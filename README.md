@@ -68,9 +68,16 @@ curl -X POST "http://localhost:8080/statement" -H "accept: */*" -H "Content-Type
 http://localhost:8080/swagger-ui.html
 
 ## Screen shots
-![Screen Shot 2019-06-29 at 12 49 18 PM](https://user-images.githubusercontent.com/38857264/60383325-939b8100-9a6f-11e9-8561-92a6f37cec25.png)
+
+### Swagger-Ui: 
 ![Screen Shot 2019-06-29 at 12 48 32 PM](https://user-images.githubusercontent.com/38857264/60383327-939b8100-9a6f-11e9-96f1-e37f56ac8327.png)
+
+### XML File processing
+![Screen Shot 2019-06-29 at 12 49 18 PM](https://user-images.githubusercontent.com/38857264/60383325-939b8100-9a6f-11e9-8561-92a6f37cec25.png)
+
+### CSV File processing
 ![Screen Shot 2019-06-29 at 12 48 57 PM](https://user-images.githubusercontent.com/38857264/60383326-939b8100-9a6f-11e9-9663-ae77e7b55c69.png)
+
 ## Testing
 The tests can be performed via following Maven command:
 
