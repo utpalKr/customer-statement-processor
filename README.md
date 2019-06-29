@@ -57,10 +57,12 @@ Either PostMan or an equivalent applications can be used to use the service.
 
 ## Via cURL
 The endpoint can be used via `cURL` using the following command:
+
 ```bash
 curl -X POST "http://localhost:8080/statement" -H "accept: */*" -H "Content-Type: multipart/form-data" -F
 "statementFile=@instructions.html;type=text/html"
 
+```
 ## Via SwaggerUI
 
 http://localhost:8080/swagger-ui.html
