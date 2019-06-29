@@ -52,16 +52,16 @@ To access the web page to use the service, navigate to the root (`/`). For examp
 Via the web page, file uploader could be used to validate files. If the security is enabled, authentication should be required on the browser.
 Then, `username: user` and `password: password` should be entered.
 
-### Via Postman
+## Via Postman
 Either PostMan or an equivalent applications can be used to use the service.
 
-### Via cURL
+## Via cURL
 The endpoint can be used via `cURL` using the following command:
 ```bash
 curl -X POST "http://localhost:8080/statement" -H "accept: */*" -H "Content-Type: multipart/form-data" -F
-"statementFile=@instructions.html;type=text/html"  ```
+"statementFile=@instructions.html;type=text/html"
 
-### Via SwaggerUI
+## Via SwaggerUI
 
 http://localhost:8080/swagger-ui.html
 
