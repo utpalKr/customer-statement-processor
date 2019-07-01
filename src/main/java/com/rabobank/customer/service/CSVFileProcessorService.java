@@ -50,16 +50,19 @@ public class CSVFileProcessorService implements FileProcessorService {
                 .collect(toList());
 
         final List<ValidationResult> failedResults = validationService.validate(records);
+        LOG.debug("There are " + failedResults.size() + " CSV validation failures.");
         return failedResults;
     }
 
     /**
      * Populates a record from the fields in csv file.
-     * @param fields  - the list of {@link String} fields.
+     *
+     * @param fields - the list of {@link String} fields.
      * @return a record
      */
     private Record populateRecord(final List<String> fields) {
 
+        LOG.debug("Populating records form the fields.");
         Record record = new Record(Integer.parseInt(fields.get(0)), fields.get(1),
                 fields.get(2),
                 Double.parseDouble(fields.get(3)),

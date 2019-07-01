@@ -3,6 +3,7 @@ package com.rabobank.customer.service;
 import com.rabobank.customer.exception.ValidationException;
 import com.rabobank.customer.model.Record;
 import com.rabobank.customer.model.ValidationResult;
+import com.rabobank.customer.service.impl.ValidationServiceImpl;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;

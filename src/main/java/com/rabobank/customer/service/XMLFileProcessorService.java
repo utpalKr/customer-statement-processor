@@ -43,6 +43,8 @@ public class XMLFileProcessorService implements FileProcessorService {
         Records records = (Records) jaxbUnmarshaller.unmarshal(mFile.getInputStream());
 
         List<ValidationResult> results = validationService.validate(records.getRecords());
+        LOG.debug("There are " + results.size() + " XML validation failures.");
+
         return results;
     }
 }

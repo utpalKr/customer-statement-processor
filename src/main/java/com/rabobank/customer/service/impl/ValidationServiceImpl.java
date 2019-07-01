@@ -1,8 +1,9 @@
-package com.rabobank.customer.service;
+package com.rabobank.customer.service.impl;
 
 import com.rabobank.customer.exception.ValidationException;
 import com.rabobank.customer.model.Record;
 import com.rabobank.customer.model.ValidationResult;
+import com.rabobank.customer.service.ValidationService;
 import com.rabobank.customer.validators.EndBalanceValidator;
 import com.rabobank.customer.validators.IStatementRecordValidator;
 import com.rabobank.customer.validators.UniqueTransactionReferenceValidator;
@@ -24,6 +25,7 @@ public class ValidationServiceImpl implements ValidationService {
     @Override
     public List<ValidationResult> validate(final List<Record> recordList) throws ValidationException {
 
+        LOG.debug("Validating " + recordList.size() + " records.");
         final List<IStatementRecordValidator> validators = new ArrayList<>();
         validators.add(new EndBalanceValidator());
         validators.add(new UniqueTransactionReferenceValidator());

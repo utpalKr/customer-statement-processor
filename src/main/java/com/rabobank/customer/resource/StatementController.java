@@ -43,13 +43,13 @@ public class StatementController {
 
         List<ValidationResult> validationResults = null;
         if (!statementFile.isEmpty()) {
-            if (statementFile.getContentType().equalsIgnoreCase(FileType.CSV.getValue())) {
+            if (FileType.CSV.getValue().equalsIgnoreCase(statementFile.getContentType())) {
                 final FileProcessorService service = fileProcessorServiceFactory
                         .getProcessorService(ProcessorServiceType.CSV_PROCESSOR_SERVICE);
                 validationResults = service.processStatement(statementFile);
 
-            } else if (statementFile.getContentType().equalsIgnoreCase(FileType.TXT_XML.getValue())
-                    || statementFile.getContentType().equalsIgnoreCase(FileType.XML.getValue())) {
+            } else if (FileType.TXT_XML.getValue().equalsIgnoreCase(statementFile.getContentType())
+                    || FileType.XML.getValue().equalsIgnoreCase(statementFile.getContentType())) {
                 final FileProcessorService service = fileProcessorServiceFactory
                         .getProcessorService(ProcessorServiceType.XML_PROCESSOR_SERVICE);
                 validationResults = service.processStatement(statementFile);
