@@ -21,7 +21,7 @@
 		<auto-value.version>1.6.2</auto-value.version>
 		<jsr-305.version>3.0.2</jsr-305.version>
 		<commons.lang3.version>3.7</commons.lang3.version>
-		<junit.version>4.12</junit.version>
+		<junit.version>4.13.1</junit.version>
 	</properties>
 
 	<dependencies>
